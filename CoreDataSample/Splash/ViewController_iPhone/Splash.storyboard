@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fFt-tH-Lsi">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.otf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="QMG-6z-NCK">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="fFt-tH-Lsi" customClass="SplashViewController" customModule="CoreDataSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BJh-mB-W7u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-j2-jZc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHI-wJ-Tsy">
+                                <rect key="frame" x="37.5" y="547" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5ZP-eT-YQL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
+                                <state key="normal" title="Get started">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="fFt-tH-Lsi" eventType="touchUpInside" id="Ffg-Cz-ZKB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record your daily places" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRj-kQ-O0r">
+                                <rect key="frame" x="47.5" y="494.5" width="280" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzM-7l-2Bw">
+                                <rect key="frame" x="10" y="313" width="355" height="41"/>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWE-Ci-CVU">
+                                <rect key="frame" x="98" y="153.5" width="179" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OWE-Ci-CVU" secondAttribute="height" multiplier="42:47" id="ZJS-pw-zV2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.2666666667" blue="0.89300599729999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffP-j2-jZc" firstAttribute="leading" secondItem="1oH-Tm-xw6" secondAttribute="leading" id="1oK-Th-CHM"/>
+                            <constraint firstItem="SHI-wJ-Tsy" firstAttribute="top" secondItem="nRj-kQ-O0r" secondAttribute="bottom" constant="35" id="3d7-sv-7e2"/>
+                            <constraint firstItem="OWE-Ci-CVU" firstAttribute="height" secondItem="ffP-j2-jZc" secondAttribute="height" multiplier="0.3" id="92a-74-5Sk"/>
+                            <constraint firstItem="OWE-Ci-CVU" firstAttribute="centerX" secondItem="BJh-mB-W7u" secondAttribute="centerX" id="9g9-kf-ZUt"/>
+                            <constraint firstItem="nRj-kQ-O0r" firstAttribute="trailing" secondItem="SHI-wJ-Tsy" secondAttribute="trailing" constant="-10" id="CLY-Cz-G3Z"/>
+                            <constraint firstItem="OWE-Ci-CVU" firstAttribute="centerX" secondItem="BJh-mB-W7u" secondAttribute="centerX" id="E5c-ZW-D4m"/>
+                            <constraint firstItem="nRj-kQ-O0r" firstAttribute="leading" secondItem="SHI-wJ-Tsy" secondAttribute="leading" constant="10" id="Ffp-EV-bar"/>
+                            <constraint firstItem="nRj-kQ-O0r" firstAttribute="centerX" secondItem="BJh-mB-W7u" secondAttribute="centerX" id="P2D-kL-i8U"/>
+                            <constraint firstAttribute="bottom" secondItem="ffP-j2-jZc" secondAttribute="bottom" id="RQj-Za-Mlo"/>
+                            <constraint firstItem="1oH-Tm-xw6" firstAttribute="trailing" secondItem="IzM-7l-2Bw" secondAttribute="trailing" constant="10" id="RrR-UD-Wvg"/>
+                            <constraint firstItem="IzM-7l-2Bw" firstAttribute="centerY" secondItem="BJh-mB-W7u" secondAttribute="centerY" id="SBl-Ck-uL8"/>
+                            <constraint firstItem="SHI-wJ-Tsy" firstAttribute="centerX" secondItem="BJh-mB-W7u" secondAttribute="centerX" id="SPh-ea-4PR"/>
+                            <constraint firstAttribute="bottom" secondItem="SHI-wJ-Tsy" secondAttribute="bottom" constant="70" id="Xis-NV-pbh"/>
+                            <constraint firstItem="ffP-j2-jZc" firstAttribute="top" secondItem="BJh-mB-W7u" secondAttribute="top" id="YXZ-Rg-m1v"/>
+                            <constraint firstItem="OWE-Ci-CVU" firstAttribute="centerY" secondItem="BJh-mB-W7u" secondAttribute="centerY" constant="-80" id="Yds-13-xf4"/>
+                            <constraint firstItem="1oH-Tm-xw6" firstAttribute="trailing" secondItem="ffP-j2-jZc" secondAttribute="trailing" id="Zr6-eK-14B"/>
+                            <constraint firstItem="IzM-7l-2Bw" firstAttribute="leading" secondItem="1oH-Tm-xw6" secondAttribute="leading" constant="10" id="dQi-7d-aoB"/>
+                            <constraint firstItem="IzM-7l-2Bw" firstAttribute="centerX" secondItem="BJh-mB-W7u" secondAttribute="centerX" id="jCd-oJ-EMh"/>
+                            <constraint firstItem="SHI-wJ-Tsy" firstAttribute="width" secondItem="ffP-j2-jZc" secondAttribute="width" multiplier="0.8" id="yiD-mF-SZm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1oH-Tm-xw6"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OWE-Ci-CVU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="SHI-wJ-Tsy" id="njQ-nX-bOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKR-Wr-gKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="375" height="812"/>
+    </resources>
+</document>
